@@ -204,9 +204,10 @@ else:
 
             # Comment about visualization
             st.warning('''There seems to be an imbalance between salaries earned across different ethnic groups!
-                        We must work to end alll forms of racial discrimination!
-                        To read more about laws forbidding racial discrimination in the workplace by the U.S. Equal Employment
-                        Opportunity Comission, check the following link: https://www.eeoc.gov/racecolor-discrimination''')
+                        We must work to end alll forms of racial discrimination!''')
+            st.info('''To read more about laws forbidding racial discrimination in the workplace by the U.S. Equal Employment
+            Opportunity Comission, check the following link: https://www.eeoc.gov/racecolor-discrimination''')
+
 
         with col2:
             # Visualization 2: Barplot
