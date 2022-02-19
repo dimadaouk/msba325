@@ -263,6 +263,10 @@ else:
             fig = px.bar(data, x = 'ManagerName', y = 'Count', color = 'PerformanceScore')
             st.plotly_chart(fig, user_container_width = True)
 
+            # Commenting on the visualization
+            st.success('''David Stanley is the manager whose team has the most employees
+                        that have the best performance score: fully meets.''')
+
         with col2:
             # Visualization 6:
             st.markdown('## Visualizing the Recruitment Channels Used By HR')
