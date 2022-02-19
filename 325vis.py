@@ -263,7 +263,7 @@ else:
             if number == 6:
                 st.write('You are correct!')
             else:
-                st.write(number, 'is incorrect. Try again, you can do this!'')
+                st.write(number, 'is incorrect. Try again, you can do this!')
 
     else:
         st.write('Recruitment and performance')
