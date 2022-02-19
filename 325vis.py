@@ -119,7 +119,8 @@ elif option == 'COVID19 Dataset':
         st.markdown('### The Worldwide COVID-19 Vaccination Progress')
 
         fig = go.Figure(px.choropleth(cum_vaccine_by_location2, locations = 'iso_code', color = 'cum_total_vaccinations', hover_name = 'location',
-                  animation_frame = 'date2', color_continuous_scale = px.colors.sequential.Plasma))
+                  animation_frame = 'date2', color_continuous_scale = px.colors.sequential.Plasma,
+                  labels = {"date2":"Date", "cum_total_vaccinations":"Total Vaccinations"}))
         st.plotly_chart(fig)
 
     # Visualization 2: Linechart
@@ -168,7 +169,9 @@ elif option == 'COVID19 Dataset':
         # Plotting the linechart
 
         fig = px.line(df_continent, x = "date2", y = "cum_total_vaccinations",
-                      color = 'continent_name', labels = {"date2":"Date", "cum_total_vaccinations":"Total Vaccinations"})
+                      color = 'continent_name',
+                      labels = {"date2":"Date",
+                                "cum_total_vaccinations":"Total Vaccinations"})
         st.plotly_chart(fig, user_container_width = True)
 
 
