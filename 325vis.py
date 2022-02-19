@@ -311,3 +311,5 @@ else:
 
             fig = px.pie(df, values = 'EmpID', names = 'RecruitmentSource')
             st.plotly_chart(fig, user_container_width = True)
+
+            st.metric(label="Indeed", value="28%")
