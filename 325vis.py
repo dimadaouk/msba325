@@ -261,9 +261,9 @@ else:
             # Question
             number = st.number_input('Which department has the least special projects count?')
             if number == 6:
-                st.write('You are correct!')
+                st.success('You are correct!')
             else:
-                st.write(number, 'is incorrect. Try again, you can do this!')
+                st.error(number, 'is incorrect. Try again,  you can do this!')
 
     else:
         st.write('Recruitment and performance')
