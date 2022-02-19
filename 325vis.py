@@ -209,6 +209,17 @@ else:
             fig = px.bar(df, x = 'Sex', y = 'Salary', color = 'Race', barmode = 'group')
             st.plotly_chart(fig, user_container_width = True)
 
+            # Question
+            question = st.radio(
+                "Which ethnic group earns the most per year?",
+                ('White', 'Black or African American', 'Asian', 'Other'))
+
+            if question == 'White':
+                st.success('You are correct!')
+                st.balloons()
+                
+            else:
+                st.error('Try again!')
 
         # Visualization 7:
         st.markdown('## Visualizing Employee Salary Across Positions')
