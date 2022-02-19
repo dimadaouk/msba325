@@ -264,8 +264,14 @@ else:
             st.plotly_chart(fig, user_container_width = True)
 
             # Commenting on the visualization
+            st.success('''Brannon Miller is the manager whose team has the most employees
+                        that have the best performance score: exceeds.''')
+
             st.success('''David Stanley is the manager whose team has the most employees
-                        that have the best performance score: fully meets.''')
+                        that have the second best performance score: fully meets.''')
+
+            st.warning('''Michael Albert is the manager whose team has the most employees
+                        that have the worst performance score: needs improvement.''')
 
         with col2:
             # Visualization 6:
