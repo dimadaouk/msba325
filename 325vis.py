@@ -210,14 +210,16 @@ else:
             st.plotly_chart(fig, user_container_width = True)
 
             # Question
-            question = st.text_input('White', 'Black or African American',
-                                    'Asian', 'Other')
-            if question == 'White':
-                st.success('You are correct!')
+            #question = st.text_input('White', 'Black or African American',
+                                    #'Asian', 'Other')
 
-            else:
-                st.error('Try again!')
+            #if question == 'White':
+                #st.success('You are correct!')
 
+            #else:
+                #st.error('Try again!')
+            title = st.text_input('Movie title', 'Life of Brian')
+            st.write('The current movie title is', title)
 
             # Question
             #question = st.radio(
