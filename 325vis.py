@@ -264,6 +264,17 @@ else:
             st.plotly_chart(fig, user_container_width = True)
 
             # Commenting on the visualization
+            start_score, end_score = st.select_slider(
+                'Select a range of color wavelength',
+                options=['Best score', 'Second best score', 'Worst score'],
+                value=('Best score', 'Worst score'))
+            st.write('You selected wavelengths between', start_score, 'and', end_score)
+
+
+
+
+
+
             st.success('''Brannon Miller is the manager whose team has the most employees
                         that have the best performance score: exceeds.''')
 
