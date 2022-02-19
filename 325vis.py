@@ -259,11 +259,11 @@ else:
             st.plotly_chart(fig, user_container_width = True)
 
             # Question
-            #number = st.number_input('Which department has the least special projects count?')
-            #st.write('The current number is ', number)
-            number = st.number_input('Insert a number')
-            st.write('The current number is ', number)
-
+            number = st.number_input('Which department has the least special projects count?')
+            if number == 6:
+                st.write('You are correct!')
+            else:
+                st.write(number, 'is incorrect. Try again, you can do this!'')
 
     else:
         st.write('Recruitment and performance')
