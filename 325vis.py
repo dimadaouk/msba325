@@ -120,7 +120,7 @@ elif option == 'COVID19 Dataset':
 
         fig = go.Figure(px.choropleth(cum_vaccine_by_location2, locations = 'iso_code', color = 'cum_total_vaccinations', hover_name = 'location',
                   animation_frame = 'date2', color_continuous_scale = px.colors.sequential.Plasma,
-                  labels = {"date2":"Date", "cum_total_vaccinations":"Total Vaccinations"}))
+                  labels = {"date2":"Date", "cum_total_vaccinations":"Total Vacc."}))
         st.plotly_chart(fig)
 
     # Visualization 2: Linechart
