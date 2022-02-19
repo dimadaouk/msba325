@@ -209,7 +209,7 @@ else:
             fig = px.bar(df, x = 'Sex', y = 'Salary', color = 'Race', barmode = 'group')
             st.plotly_chart(fig, user_container_width = True)
 
-            Question
+            # Question
             question = st.radio(
                 "Which ethnic group earns the most per year?",
                 ('White', 'Black or African American', 'Asian', 'Other'))
