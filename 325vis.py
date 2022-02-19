@@ -123,6 +123,16 @@ elif option == 'COVID19 Dataset':
                   labels = {"date2":"Date", "cum_total_vaccinations":"Total Vacc."}))
         st.plotly_chart(fig)
 
+        question = st.radio(
+                    "Have you been vaccinated against COVID-19?",
+                    ('Yes', 'No'))
+
+        if question == 'Yes':
+            st.write('Great! Do not foget to take a booster shot as well')
+        else:
+            st.write('''Click on this link to learn more about the benefit of getting vaccinated:
+                        https://www.cdc.gov/coronavirus/2019-ncov/vaccines/vaccine-benefits.html#:~:text=Getting%20vaccinated%20against%20COVID%2D19,ages%205%20years%20and%20older''')
+
     # Visualization 2: Linechart
     with col2:
         st.markdown('### COVID19 Vaccination Trend by Continent')
