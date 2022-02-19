@@ -218,8 +218,8 @@ else:
 
             #else:
                 #st.error('Try again!')
-            title = st.text_input('Movie title', 'Life of Brian')
-            st.write('The current movie title is', title)
+            title = st.text_input('Ethnic group:', 'White')
+            st.write('The current ethnic group is', title)
 
             # Question
             #question = st.radio(
