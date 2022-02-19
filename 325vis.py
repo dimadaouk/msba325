@@ -260,7 +260,7 @@ else:
 
             # Question
             number = st.number_input('Which department (DeptID) has the least special projects count?',
-                                    step = 1, min_value = 1, max_value = 6)
+                                    step = 1, min_value = 0, max_value = 6)
             if number == 6:
                 st.success('You are correct!')
             else:
