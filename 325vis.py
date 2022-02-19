@@ -313,4 +313,5 @@ else:
             st.plotly_chart(fig, user_container_width = True)
 
             if st.button('A tip for candidates applying to a job at this company!'):
-                st.info('The most successful recruitment channel for this company is Indeed.')
+                st.info('''The top 3 channels that this company hires from are: Indeed, LinkedIn and Google Search.
+                To increase your chances of getting hired, apply to this company .''')
