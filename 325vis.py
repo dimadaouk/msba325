@@ -264,13 +264,11 @@ else:
             st.plotly_chart(fig, user_container_width = True)
 
             # Commenting on the visualization
-            start_score, end_score = st.select_slider(
-                'Select a range of color wavelength',
-                options=['Best score', 'Second best score', 'Worst score'],
-                value=('Best score', 'Worst score'))
-            st.write('You selected wavelengths between', start_score, 'and', end_score)
-
-
+            start_color, end_color = st.select_slider(
+            'Select a range of color wavelength',
+                options=['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'],
+                value=('red', 'blue'))
+            st.write('You selected wavelengths between', start_color, 'and', end_color)
 
 
 
