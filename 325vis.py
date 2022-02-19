@@ -210,6 +210,16 @@ else:
             st.plotly_chart(fig, user_container_width = True)
 
             # Question
+            question = st.text_input('White', 'Black or African American',
+                                    'Asian', 'Other')
+            if question == 'White':
+                st.success('You are correct!')
+
+            else:
+                st.error('Try again!')
+
+
+            # Question
             #question = st.radio(
                 #"Which ethnic group earns the most per year?",
                 #('White', 'Black or African American', 'Asian', 'Other'))
