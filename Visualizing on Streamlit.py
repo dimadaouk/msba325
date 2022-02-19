@@ -64,7 +64,7 @@ elif option == 'COVID19 Dataset':
     # Dataset 1: COVID-19 Vaccinations
 
     # Loading the data
-    df = pd.read_csv("/Users/dimadaouk/Documents/Data Visualization/Assignment 2- Vaccinations Dataset Plotly/vaccinations.csv")
+    df = pd.read_csv("vaccinations.csv")
 
     # Cleaning the dataset
     # Converting the date column's data type from object to datetime
@@ -177,7 +177,7 @@ else:
     st.markdown('# HR Data')
 
     # Loading the data
-    df = pd.read_csv("/Users/dimadaouk/Documents/Data Visualization/Assignment 2- HR Dataset Plotly/HRDataset_v14.csv")
+    df = pd.read_csv("HRDataset_v14.csv")
 
     topic = st.radio(
     "Which topic would you like to explore?",
