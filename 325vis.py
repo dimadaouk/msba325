@@ -259,7 +259,8 @@ else:
             st.plotly_chart(fig, user_container_width = True)
 
             # Question
-            number = st.number_input('Which department (DeptID) has the least special projects count?', step = 1)
+            number = st.number_input('Which department (DeptID) has the least special projects count?',
+                                    step = 1, min_value = 1, max_value = 6)
             if number == 6:
                 st.success('You are correct!')
             else:
