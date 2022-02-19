@@ -212,11 +212,14 @@ else:
             # Question
             question = st.radio(
                 "Which ethnic group earns the most per year?",
-                ('White', 'Black or African American', 'Asian', 'Other'), index = 4)
+                ('White', 'Black or African American', 'Asian', 'Other', 'I do not know'), index = 4)
 
             if question == 'White':
                 st.success('You are correct!')
 
+            elif question == 'I do not know':
+                st.info('Pick an option!')
+                
             else:
                 st.error('Try again!')
 
