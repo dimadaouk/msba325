@@ -312,4 +312,5 @@ else:
             fig = px.pie(df, values = 'EmpID', names = 'RecruitmentSource')
             st.plotly_chart(fig, user_container_width = True)
 
-            st.metric(label="Indeed", value="28%")
+            if st.button('A tip for candidates applying to a job at this company!'):
+                st.info('The most successful recruitment channel for this company is Indeed.')
