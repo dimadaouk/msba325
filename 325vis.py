@@ -267,7 +267,7 @@ else:
             st.success('''Brannon Miller is the manager whose team has the most employees
                         that have the best performance score: exceeds.''')
 
-            st.success('''David Stanley is the manager whose team has the most employees
+            st.info('''David Stanley is the manager whose team has the most employees
                         that have the second best performance score: fully meets.''')
 
             st.warning('''Michael Albert is the manager whose team has the most employees
