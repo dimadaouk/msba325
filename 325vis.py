@@ -202,6 +202,12 @@ else:
             fig = px.violin(df, y = 'Salary', x ='Race', color = 'Sex', box = True, points = 'all')
             st.plotly_chart(fig, use_container_width = True)
 
+            # Comment about visualization
+            st.warning('''There seems to be an imbalance between salaries earned across different ethnic groups!
+                        We must work to end alll forms of racial discrimination!
+                        To read more about laws forbidding racial discrimination in the workplace by the U.S. Equal Employment
+                        Opportunity Comission, check the following link: ''')
+
         with col2:
             # Visualization 2: Barplot
             st.markdown('## Visualizing the Relationship Between Gender and Salary Across Race')
