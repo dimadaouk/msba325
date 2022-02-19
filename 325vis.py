@@ -314,4 +314,4 @@ else:
 
             if st.button('A tip for candidates applying to a job at this company!'):
                 st.info('''The top 3 channels that this company hires from are: Indeed, LinkedIn and Google Search.
-                To increase your chances of getting hired, apply to this company .''')
+                To increase your chances of getting hired, apply through one of these channels.''')
