@@ -232,6 +232,9 @@ else:
             fig = px.strip(df, x='EmpSatisfaction', y='Absences').update_traces(jitter = 1, opacity = 0.8)
             st.plotly_chart(fig, user_container_width = True)
 
+            st.error('''We deduce that there is no clear relationship between employee satisfaction and the
+                        number of absences per year.''')
+
         with col2:
             # Visualization 5: Parallel Coordinates Plot
             st.markdown('## Visualizing the Relationship Between Special Projects and Employee Satisfaction Per Department')
