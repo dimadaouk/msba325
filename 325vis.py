@@ -168,7 +168,7 @@ elif option == 'COVID19 Dataset':
         # Plotting the linechart
 
         fig = px.line(df_continent, x = "date2", y = "cum_total_vaccinations",
-                      color = 'continent_name')
+                      color = 'continent_name', labels = {"date2":"Date", "cum_total_vaccinations":"Total Vaccinations"})
         st.plotly_chart(fig, user_container_width = True)
 
 
