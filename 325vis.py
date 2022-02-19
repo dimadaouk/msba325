@@ -206,8 +206,9 @@ else:
             if st.button('Insight!'):
                 st.warning('''There seems to be an imbalance between salaries earned across different ethnic groups!
                         We must work to end all forms of racial discrimination.''')
-                st.info('''To read more about laws forbidding racial discrimination in the workplace by the U.S. Equal Employment
-                        Opportunity Comission, check the following link: https://www.eeoc.gov/racecolor-discrimination''')
+                if st.button('Learn more!')
+                    st.info('''To read more about laws forbidding racial discrimination in the workplace by the U.S. Equal Employment
+                            Opportunity Comission, check the following link: https://www.eeoc.gov/racecolor-discrimination''')
 
 
         with col2:
