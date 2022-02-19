@@ -128,7 +128,7 @@ elif option == 'COVID19 Dataset':
                     ('Yes', 'No'))
 
         if question == 'Yes':
-            st.write('Great! Do not foget to take a booster shot as well')
+            st.write('Great! Do not foget to take a booster shot as well. :clap:')
         else:
             st.write('Click on this link to learn more about the benefit of getting vaccinated')
             if st.button('Benefits of the vaccine'):
