@@ -216,8 +216,7 @@ else:
 
             if question == 'White':
                 st.success('You are correct!')
-                st.balloons()
-                
+
             else:
                 st.error('Try again!')
 
