@@ -264,22 +264,20 @@ else:
             st.plotly_chart(fig, user_container_width = True)
 
             # Commenting on the visualization
-            start_color, end_color = st.select_slider(
-            'Select a range of color wavelength',
-                options=['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'],
-                value=('red', 'blue'))
-            st.write('You selected wavelengths between', start_color, 'and', end_color)
+            manager = st.radio(
+                            "Select a manager",
+                            ('Brannon Miller', 'David Stanley', 'Michael Albert'))
 
+            if manager == 'Brannon Miller':
+                st.success('''Brannon Miller is the manager whose team has the most employees
+                            that have the best performance score: exceeds.''')
 
+            elif manager == 'David Stanley':
+                st.info('''David Stanley is the manager whose team has the most employees
+                            that have the second best performance score: fully meets.''')
 
-
-            st.success('''Brannon Miller is the manager whose team has the most employees
-                        that have the best performance score: exceeds.''')
-
-            st.info('''David Stanley is the manager whose team has the most employees
-                        that have the second best performance score: fully meets.''')
-
-            st.warning('''Michael Albert is the manager whose team has the most employees
+            else:
+                st.warning('''Michael Albert is the manager whose team has the most employees
                         that have the worst performance score: needs improvement.''')
 
         with col2:
