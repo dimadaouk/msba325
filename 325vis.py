@@ -13,7 +13,6 @@ import matplotlib.pyplot as plt
 from PIL import Image
 st.set_page_config(layout = 'wide')
 
-st.write('hi')
 # Loading AUB-OSB logo
 image = Image.open("osb_logo.png")
 #st.image(image)
