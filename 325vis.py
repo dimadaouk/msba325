@@ -184,8 +184,8 @@ elif option == 'COVID19 Dataset':
                       labels = {"date2":"Date",
                                 "cum_total_vaccinations":"Total Vaccinations",
                                 "continent_name":'Continent'})
-        st.plotly_chart(fig, user_container_width = True)
 
+        st.plotly_chart(fig, user_container_width = True)
 
 else:
     # Dataset 2: HR dataset
