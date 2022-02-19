@@ -212,7 +212,7 @@ else:
             # Question
             question = st.radio(
                 "Which ethnic group earns the most per year?",
-                ('White', 'Black or African American', 'Asian', 'Other'), disabled = True)
+                ('White', 'Black or African American', 'Asian', 'Other'))
 
             if question == 'White':
                 st.success('You are correct!')
