@@ -219,7 +219,7 @@ else:
 
             elif question == 'I do not know':
                 st.info('Pick an option!')
-                
+
             else:
                 st.error('Try again!')
 
@@ -257,6 +257,13 @@ else:
 
             fig = px.parallel_coordinates(df2, color = 'DeptID', color_continuous_scale = ['red', 'green', 'blue'])
             st.plotly_chart(fig, user_container_width = True)
+
+            # Question
+            #number = st.number_input('Which department has the least special projects count?')
+            #st.write('The current number is ', number)
+            number = st.number_input('Insert a number')
+            st.write('The current number is ', number)
+
 
     else:
         st.write('Recruitment and performance')
